@@ -12,7 +12,7 @@ Verifying it's user flow and usability.
 
 ## EXECUTION NOTES
 
-| **Test User** | **Actions Performed**                                              | **Observed Behavior**                                                                 |
+| **Test User** | **Actions Performed**                                              | **Observed Behaviour**                                                                 |
 | ------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
 | standard_user | Entered username & password and click 'Login' button on Login Page | Successful login and redirected to Inverntory Page                                    |
 | standard_user | Clicked on item on Inventory Page                                  | Redirected to item's detailed page                                                    |
@@ -21,7 +21,7 @@ Verifying it's user flow and usability.
 
 ## BUGS/ISSUES FOUND
 
-| **Test User**   | **Actions Performed**                                              | **Observed Behavior**                                                                   |
+| **Test User**   | **Actions Performed**                                              | **Observed Behaviour**                                                                   |
 | --------------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
 | standard_user   | Completed checkout process with an empty cart                      | Checkout successfully completed, success message:'Thank you for your order!'            |
 | locked_out_user | Entered username & password and click 'Login' button on Login Page | Login unsuccessful, error message:'Epic sadface: Sorry, this user has been locked out.' |
