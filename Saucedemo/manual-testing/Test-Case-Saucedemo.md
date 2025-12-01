@@ -1,13 +1,11 @@
-# Test Cases - SauceDemo
+# Test Cases - [SauceDemo](https://www.saucedemo.com/)
 
 This document outlines the test cases for verifying **login**, **inventory**,
 **cart**, and **checkout** behaviour on **SauceDemo**.  
 Each test case includes **priority**, **preconditions**, **steps**, and
 **expected outcomes** for clarity.
 
-## Login Functionality 🔐
-
-### TC-LOGIN-001: Successful Login With Valid Credentials
+## TC-LOGIN-001: Successful Login With Valid Credentials
 
 **Priority:** High
 
@@ -28,9 +26,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
   **[Inventory Page](https://www.saucedemo.com/inventory.html)**
 - Product list is displayed
 
----
-
-### TC-LOGIN-002: Unsuccessful Login With Invalid Credentials
+## TC-LOGIN-002: Unsuccessful Login With Invalid Credentials
 
 **Priority:** High
 
@@ -51,9 +47,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 - System displays error message: **"Epic sadface: Username and password do not
   match any user in this service"**
 
----
-
-### TC-LOGIN-003: Login Fails With Blank Username and Password
+## TC-LOGIN-003: Login Fails With Blank Username and Password
 
 **Priority:** Medium
 
@@ -73,9 +67,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 - System displays error message: **"Epic sadface: Username and password do not
   match any user in this service"**
 
----
-
-### TC-LOGIN-004: Login Fails When Valid Credentials Include Extra Whitespace
+## TC-LOGIN-004: Login Succeeds When Valid Credentials Include Extra Whitespace
 
 **Priority:** High
 
@@ -98,11 +90,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
   **[Inventory Page](https://www.saucedemo.com/inventory.html)**
 - Product list is displayed
 
----
-
-## Inventory Functionality 📦
-
-### TC-INVENTORY-001: Inventory Items Display Correct Details
+## TC-INVENTORY-001: Inventory Items Display Correct Details
 
 **Priority:** High
 
@@ -121,9 +109,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 
 - All item names, descriptions, and images display correct and matching details
 
----
-
-### TC-INVENTORY-002: Sort Items by Name (Z → A)
+## TC-INVENTORY-002: Successfully Sort Products by Name (Z → A)
 
 **Priority:** Low
 
@@ -141,9 +127,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 
 - Products reorder in **descending alphabetical order** by name
 
----
-
-### TC-INVENTORY-003: Item Sort Order Does Not Persist After Page Refresh
+## TC-INVENTORY-003: Item Sort Order Persist After Page Refresh
 
 **Priority:** Low
 
@@ -162,9 +146,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 - Page refreshes successfully
 - Products remain arranged in **descending order by name**
 
----
-
-### TC-INVENTORY-004: Add Item to Cart From Inventory Page
+## TC-INVENTORY-004: Add Item to Cart From Inventory Page
 
 **Priority:** High
 
@@ -184,9 +166,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 - Cart icon count increases by **1**
 - Item’s button updates to reflect its new state (**“Remove”**)
 
----
-
-### TC-INVENTORY-005: Remove Item From Cart on Inventory Page
+## TC-INVENTORY-005: Remove Item From Cart on Inventory Page
 
 **Priority:** High
 
@@ -207,9 +187,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 - Cart icon count decreases by **1**
 - Item’s button updates to reflect its new state (**“Add to cart”**)
 
----
-
-### TC-INVENTORY-006: Successfully Add the Correct Item to Cart
+## TC-INVENTORY-006: Successfully Add the Correct Item to Cart
 
 **Priority:** High
 
@@ -233,11 +211,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 - Details of the cart item match the captured data (**name, image, description**)
 - Cart icon count increases by **1**
 
----
-
-## Cart Functionality 🛒
-
-### TC-CART-001: Cart Items Persist Through Refresh on Cart Page
+## TC-CART-001: Cart Items Persist Through Refresh on Cart Page
 
 **Priority:** High
 
@@ -260,9 +234,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 - Items in the cart match the captured data
 - Cart icon count remains **unchanged**
 
----
-
-### TC-CART-002: Remove Cart Item from Cart Page
+## TC-CART-002: Remove Cart Item from Cart Page
 
 **Priority:** Medium
 
@@ -282,9 +254,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 - The selected item is removed from the cart
 - Cart icon count decreases by **1**
 
----
-
-### TC-CART-003: Checkout Process Fails When Cart is Empty
+## TC-CART-003: Checkout Process Fails When Cart is Empty
 
 **Priority:** High
 
@@ -304,9 +274,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 - System displays error message:  
   **“Your Cart is Empty, Add Items from Inventory page”**
 
----
-
-### TC-CART-004: Successfully Start Checkout Process When Cart Has an Item
+## TC-CART-004: Successfully Start Checkout Process When Cart Has an Item
 
 **Priority:** High
 
@@ -324,11 +292,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 
 - User is navigated to **[Checkout Step One Page](https://www.saucedemo.com/checkout-step-one.html)**
 
----
-
-## Checkout Functionality 🧾
-
-### TC-CHECKOUT-001: User Cannot Proceed to Checkout Step Two with Blank Form
+## TC-CHECKOUT-001: User Cannot Proceed to Checkout Step Two with Blank Form
 
 **Priority:** High
 
@@ -348,9 +312,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 - System displays error message:  
   **“Error: First Name is required”**
 
----
-
-### TC-CHECKOUT-002: Checkout Step One Form Rejects Invalid Data Types
+## TC-CHECKOUT-002: Checkout Step One Form Rejects Invalid Data Types
 
 **Priority:** Medium
 
@@ -372,9 +334,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 - System displays error message:  
   **“Error: Data type for First Name is incorrect”**
 
----
-
-### TC-CHECKOUT-003: Cart Items Match Items Displayed in Checkout Step Two
+## TC-CHECKOUT-003: Cart Items Match Items Displayed in Checkout Step Two
 
 **Priority:** High
 
@@ -392,9 +352,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 
 - Captured cart item data matches Checkout Step Two overview (**name, image, description**)
 
----
-
-### TC-CHECKOUT-004: Checkout Total Price Calculation Is Correct
+## TC-CHECKOUT-004: Checkout Total Price Calculation Is Correct
 
 **Priority:** High
 
@@ -412,9 +370,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 
 - Manually calculated total matches the total displayed on Checkout Step Two
 
----
-
-### TC-CHECKOUT-005: Successfully Complete Checkout Process
+## TC-CHECKOUT-005: Successfully Complete Checkout Process
 
 **Priority:** High
 
