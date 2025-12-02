@@ -164,7 +164,7 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 
 - Selected item is added to the cart
 - Cart icon count increases by **1**
-- Item’s button updates to reflect its new state (**“Remove”**)
+- Item’s button updates to reflect its new state (**Remove**)
 
 ## TC-INVENTORY-005: Remove Item From Cart on Inventory Page
 
@@ -179,13 +179,13 @@ Each test case includes **priority**, **preconditions**, **steps**, and
 **Steps:**
 
 1. Select an item that has been added to the cart
-2. Click the **“Remove”** button for that item
+2. Click the **Remove** button for that item
 
 **Expected Results:**
 
 - Selected item is removed from the cart
 - Cart icon count decreases by **1**
-- Item’s button updates to reflect its new state (**“Add to cart”**)
+- Item’s button updates to reflect its new state (**Add to cart**)
 
 ## TC-INVENTORY-006: Successfully Add the Correct Item to Cart
 
